@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve Clothing Gallery</title>
+    <link rel="shortcut icon" href="images/evolve_logo.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/evolve.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartpanel">
+        <div>
+            <input type="button" value="back" class="closeBtn">
+            <h2>Cart</h2>
+        </div>
+        <form action="cart.html">
+            <ul>
+                <li>
+                    <a href="a08.html"><img src="images/index_03.png" alt="product images"></a>
+                    <div>
+                        <dl>
+                            <dt>EyeWear | Pilastro 3627 
+                                Sunglasses</dt>
+                            <dd>$229.00</dd>
+                        </dl>
+                        <div class="numberComponent">
+                            <input type="button" value="-" class="countDown">
+                            <span>1</span>
+                            <input type="button" value="+" class="countUp">
+                        </div>
+                        <input type="button" value="Remove" class="deleteBtn">
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <strong>
+                    <span>Subtotal</span>
+                    <span>$229.00</span>
+                </strong>
+                <input type="submit" value="View Cart">
+            </div>
+        </form>
+    </div>
+   <div id="loginContainer">
+        <ul>
+            <li><img src="images/login_03.png" alt="runner back"></li>
+            <li><img src="images/login_05.png" alt="runner back"></li>
+            <li><img src="images/login_07.png" alt="runner back"></li>
+            <li><img src="images/login_09.png" alt="runner back"></li>
+            <li><img src="images/login_11.png" alt="runner back"></li>
+            <li><img src="images/login_13.png" alt="runner back"></li>
+            <li><img src="images/login_17.png" alt="runner back"></li>
+        </ul>
+        <input type="button" value="close" class="closeBtn">
+        <div id="sContainer" class="active">
+            <h2>Sign Up</h2>
+            <p>Already a member?<mark data-step="lContainer" class="openStep">Log In</mark></p>
+            <div class="active">
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with Google</a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                <span>or</span>
+                <span class="openEmail" data-email="seContainer">Sign up with email</span>
+            </div>
+            <div id="seContainer">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="s_Email">Email</label>
+                        <input type="email" id="s_Email" required>
+                        <label for="s_Password">Password</label>
+                        <input type="password" id="s_Password" required>
+                        <input type="submit" value="Sign Up">
+                    </fieldset>
+                    <span>or sign up with</span>
+                    <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with google</a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                </form>
+            </div>
+        </div>
+        <div id="lContainer">
+            <h2>Log In</h2>
+            <p>New to this site?<mark data-step="sContainer" class="closeStep">Log In</mark></p>
+            <div class="active">
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Log in with Google</a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Log in with Facebook</a>
+                <span>or</span>
+                <span class="openEmail" data-email="leContainer">Log in with email</span>
+            </div>
+            <div id="leContainer">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="l_Email">Email</label>
+                        <input type="email" id="l_Email" required>
+                        <label for="l_Password">Password</label>
+                        <input type="password" id="l_Password" required>
+                        <mark data-step="fContainer" class="openStep">Forgot password?</mark>
+                        <input type="submit" value="Sign Up">
+                    </fieldset>
+                    <span>or log in with</span>
+                    <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with google</a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                </form>
+            </div>
+        </div> 
+        <div id="fContainer">
+            <h2>Reset password</h2>
+            <p>Enter your login email and we’ll send you a link to reset your password.</p>
+            <div class="active">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="f_Email">Email</label>
+                        <input type="email" id="f_Email" required>
+                        <input type="submit" value="Reset Password">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <a href="cart.html">shopping cart</a>
+            <input type="button" value="cart" data-panel="cartpanel" class="openBtn">
+            <a href="#" data-panel="loginContainer" class="openBtn">log in</a>
+        </div>        
+        <h1><a href="index.html"><img src="images/logo_evolve.svg" alt="evolve logo"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="shop.html">shop all</a></li>
+                <li><a href="allClothes.html">clothing</a></li>
+                <li><a href="allFootwear.html">footwear</a></li>
+                <li><a href="allAccessories.html">accessories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="detailContainer">
+        <div>
+            <a href="allClothes.html">Back to clothes</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="allClothes.html">clothing</a></li>
+                <li><span>Honor the Gift HTG Seal Logo T-Shirt | stone</span></li>
+            </ul>
+            <span>
+                <a href="t11.html">Prev</a>
+                <a href="t13.html">Next</a>
+            </span>
+        </div>
+        <div>
+            <div>
+                <ul class="detailSlides">
+                    <li><img src="images/t12_03.png" alt="t-shirts picture"></li>
+                    <li><img src="images/t12_05.png" alt="t-shirts picture"></li>
+                    <li><img src="images/t12_07.png" alt="t-shirts picture"></li>
+                    <li><img src="images/t12_09.png" alt="t-shirts picture"></li>
+                    <li><img src="images/t12_11.png" alt="t-shirts picture"></li>
+                </ul>
+                <b>available in 5 sizes</b>
+            </div>
+            <div>
+                <h3>Honor the Gift HTG Seal Logo T-Shirt | stone</h3>
+                <span>&dollar;69.00</span>
+                <form action="cart.html">
+                    <label for="size">Pick a size</label>
+                    <select id="size">
+                        <option selected>Select</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Extra Large</option>
+                    </select>
+                    <label>Quantity</label>
+                    <div class="numberComponent">
+                        <span>1</span>
+                        <input type="button" value="&lt;" class="countUp">
+                        <input type="button" value="&gt;" class="countDown">
+                    </div>
+                    <input type="submit" value="Add">
+                </form>
+                <div>
+                    <h4 data-toggle="spec" class="opentoge">specifications</h4>
+                    <div id="spec">
+                        <ul>
+                            <li><strong>sizes&colon;</strong></li>
+                            <li>Small</li>
+                            <li>Medium</li>
+                            <li>Large</li>
+                            <li>Extra Large</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Details&colon;</strong></li>
+                            <li>7 oz. Jersey</li>
+                            <li>Box Fit</li>
+                            <li>Drop Shoulders</li>
+                            <li>HTG® Custom Labels</li>
+                            <li>100% Cotton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="btnTop"><img src="images/ico_top.svg" alt="gotopicon"></a>
+    <footer>
+        <div>
+            <div>
+                <a href="contact.html">CONTACT US</a>
+                <a href="returns.html">RETURNS & SHIPPING</a>
+                <a href="terms.html">TERMS & CONDITION</a>
+            </div>
+            <div>
+                 <p>
+                    <span>evolveclothinggallery@gmail.com<br>
+                        <a href="+82908.231.8933">908.231.8933</a></span>
+                    <span>80 W Main Street
+                        Somerville, NJ 08876</span>
+                </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/evolveclothinggallery/" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/evolve_clothing" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/evolveclothing/" target="_blank">instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>NEWSLETTER</span>
+                <form action="index.html">
+                    <input type="email" placeholder="Enter your email here*" title="insert your email">
+                    <input type="submit" value="Join">
+                </form>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><span>we Accept</span></li>
+                <li><img src="images/pic_paypal.svg" alt="paypal"></li>
+                <li><img src="images/pic_mastercard.svg" alt="mastercard"></li>
+                <li><img src="images/pic_americanexpress.svg" alt="americanexpress"></li>
+                <li><img src="images/pic_visa.svg" alt="visa"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

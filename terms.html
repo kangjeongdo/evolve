@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve Clothing Gallery</title>
+    <link rel="shortcut icon" href="images/evolve_logo.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/evolve.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartpanel">
+        <div>
+            <input type="button" value="back" class="closeBtn">
+            <h2>Cart</h2>
+        </div>
+        <form action="cart.html">
+            <ul>
+                <li>
+                    <a href="a08.html"><img src="images/index_03.png" alt="product images"></a>
+                    <div>
+                        <dl>
+                            <dt>EyeWear | Pilastro 3627 
+                                Sunglasses</dt>
+                            <dd>$229.00</dd>
+                        </dl>
+                        <div class="numberComponent">
+                            <input type="button" value="-" class="countDown">
+                            <span>1</span>
+                            <input type="button" value="+" class="countUp">
+                        </div>
+                        <input type="button" value="Remove" class="deleteBtn">
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <strong>
+                    <span>Subtotal</span>
+                    <span>$229.00</span>
+                </strong>
+                <input type="submit" value="View Cart">
+            </div>
+        </form>
+    </div>
+   <div id="loginContainer">
+        <ul>
+            <li><img src="images/login_03.png" alt="runner back"></li>
+            <li><img src="images/login_05.png" alt="runner back"></li>
+            <li><img src="images/login_07.png" alt="runner back"></li>
+            <li><img src="images/login_09.png" alt="runner back"></li>
+            <li><img src="images/login_11.png" alt="runner back"></li>
+            <li><img src="images/login_13.png" alt="runner back"></li>
+            <li><img src="images/login_17.png" alt="runner back"></li>
+        </ul>
+        <input type="button" value="close" class="closeBtn">
+        <div id="sContainer" class="active">
+            <h2>Sign Up</h2>
+            <p>Already a member?<mark data-step="lContainer" class="openStep">Log In</mark></p>
+            <div class="active">
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with Google</a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                <span>or</span>
+                <span class="openEmail" data-email="seContainer">Sign up with email</span>
+            </div>
+            <div id="seContainer">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="s_Email">Email</label>
+                        <input type="email" id="s_Email" required>
+                        <label for="s_Password">Password</label>
+                        <input type="password" id="s_Password" required>
+                        <input type="submit" value="Sign Up">
+                    </fieldset>
+                    <span>or sign up with</span>
+                    <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with google</a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                </form>
+            </div>
+        </div>
+        <div id="lContainer">
+            <h2>Log In</h2>
+            <p>New to this site?<mark data-step="sContainer" class="closeStep">Log In</mark></p>
+            <div class="active">
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Log in with Google</a>
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Log in with Facebook</a>
+                <span>or</span>
+                <span class="openEmail" data-email="leContainer">Log in with email</span>
+            </div>
+            <div id="leContainer">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="l_Email">Email</label>
+                        <input type="email" id="l_Email" required>
+                        <label for="l_Password">Password</label>
+                        <input type="password" id="l_Password" required>
+                        <mark data-step="fContainer" class="openStep">Forgot password?</mark>
+                        <input type="submit" value="Sign Up">
+                    </fieldset>
+                    <span>or log in with</span>
+                    <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fwww.stickylemon.nl%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%22898bd8ed-fdc3-4ed0-ba91-a71939647ab8%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%224760e4df-ab36-4832-bd0b-ee3146dc9e2c%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%22cPlc7V65Zff2iRglCkg220vSZc2bUgz7pvFsdFfPRNg%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" target="_blank">Sign up with google</a>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=309042052760104&kid_directed_site=0&app_id=309042052760104&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv15.0%2Fdialog%2Foauth%3Fclient_id%3D309042052760104%26redirect_uri%3Dhttps%253A%252F%252Fusers.wix.com%252Fiam%252Ffacebook-idp%252Fv1%252Fsso%252Fredirect%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Daa41a8b1-83f7-47bf-b213-1616a07b9254%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fusers.wix.com%2Fiam%2Ffacebook-idp%2Fv1%2Fsso%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522redirectTo%2522%253A%2522https%253A%252F%252Fwww.stickylemon.nl%252F_api%252Fiam%252Fauthentication%252Fv1%252Fsso%252Fcallback%252FSITE%252F898bd8ed-fdc3-4ed0-ba91-a71939647ab8%252F3ecad13f-52c3-483d-911f-31dbcf2a6d23%2522%252C%2522forwardedState%2522%253A%2522%257B%255C%2522tenantInfo%255C%2522%253A%257B%255C%2522tenantId%255C%2522%253A%255C%2522898bd8ed-fdc3-4ed0-ba91-a71939647ab8%255C%2522%252C%255C%2522tenantType%255C%2522%253A%255C%2522SITE%255C%2522%257D%252C%255C%2522customPayload%255C%2522%253A%257B%255C%2522sessionId%255C%2522%253A%255C%2522c2db5d9f-2a01-4a3c-b595-456885ff4e83%255C%2522%252C%255C%2522encryptionKey%255C%2522%253A%255C%2522wyQQwCp8bpvWRu2qTxZ5ehRwr99Ly22vDO%252Fo7wBREB4%253D%255C%2522%257D%257D%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0" target="_blank">Sign up with Facebook</a>
+                </form>
+            </div>
+        </div> 
+        <div id="fContainer">
+            <h2>Reset password</h2>
+            <p>Enter your login email and we’ll send you a link to reset your password.</p>
+            <div class="active">
+                <form action="index.html">
+                    <fieldset>
+                        <label for="f_Email">Email</label>
+                        <input type="email" id="f_Email" required>
+                        <input type="submit" value="Reset Password">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <a href="cart.html">shopping cart</a>
+            <input type="button" value="cart" data-panel="cartpanel" class="openBtn">
+            <a href="#" data-panel="loginContainer" class="openBtn">log in</a>
+        </div>        
+        <h1><a href="index.html"><img src="images/logo_evolve.svg" alt="evolve logo"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="shop.html">shop all</a></li>
+                <li><a href="allClothes.html">clothing</a></li>
+                <li><a href="allFootwear.html">footwear</a></li>
+                <li><a href="allAccessories.html">accessories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="term">
+        <ul>
+            <li>
+                <h3>
+                    TERMS OF USE & PRIVACY POLICY</h3>
+                <p>Evolve Clothing Gallery LLC. (“Evolve Clothing Gallery”), as a convenience to you, grants you access to its websites, accessible via www.evolveclothinggallery.com (the “site”), conditioned on your acceptance of the terms, conditions and notices contained herein (these “terms of use”). For the purposes of these terms of use, “content” means, collectively, any text, images, graphics, software, source code, applications, specifications, audio files, videos, articles, trademarks, logos and other information or content available through the sites that are not submissions (as that term is defined below), including but not limited to the design, structure, selection, coordination, expression, “look and feel” and arrangement of such content.</p>
+            </li>
+            <li>
+                <h3>
+                    ACCEPTANCE OF TERMS</h3>
+                <p>Please read these terms of use and Evolve Clothing Gallery’s privacy policy carefully. By using the sites, you agree to these terms of use, and you consent to the collection, use and disclosure of information as described in these terms of use and our privacy policy. If you do not agree to these terms of use and the terms and conditions of our privacy policy, you must exit the site immediately and discontinue any use of the sites and any of their content. Your use of the sites shall be deemed to be your agreement to abide by each of the terms set forth below. Evolve Clothing Gallery can change these terms at any time by posting updated terms of use on the sites or by sending registered users an email notice of the changes. If any modification is unacceptable to you, you shall cease using the sites. If you do not cease using these sites, you will be deemed to have accepted the change. These terms of use do not alter in any way the terms or conditions of any other agreement you may have with Evolve Clothing Gallery or its affiliates for other products or services. You are also subject to the Evolve Clothing Gallery's privacy policy.</p>
+                <p>
+                    These terms of use were updated as of September 9, 2014.</p>
+            </li>
+            <li>
+                <h3>
+                    USE & RESTRICTIONS</h3>
+                <p>The sites may be accessed and used only by individuals who can form legally binding contracts under applicable laws, who are 18 years of age or older, and who are not barred from using the sites under applicable laws. The sites are provided solely as a convenience to you for non-commercial use. You may access and use the sites only in accordance with all applicable laws and regulations and with these terms of use. You acknowledge and agree that Evolve Clothing Gallery, in its sole discretion and without notice or any further obligation to you, may temporarily suspend or permanently discontinue and refuse any and all current and future, access to or use of the sites. You further agree that you will not:</p>
+                <ol>
+                    <li><span>Resell for commercial purposes products purchased through use of the sites</span></li>
+                    <li><span>Resell or make commercial use of the sites or content therein</span></li>
+                    <li><span>Modify, distribute, transmit, display, perform, reproduce, publish, license, create derivative works of, transfer, or sell any content</span></li>
+                    <li><span>Collect or use any product listings or descriptions</span></li>
+                    <li><span>Use any data mining, robots, or similar data gathering and extraction methods from the site</span></li>
+                    <li><span>Other than for your use of the site as expressly permitted in these terms of use, access or attempt to access any systems or servers on which the sites are hosted or modify or alter the site in any way</span></li>
+                    <li><span>Forge headers, create a false identity or otherwise manipulate identifiers in order to deceive others or disguise the origin of any content or other information transmitted to or via the site</span></li>
+                    <li><span>Use, frame or utilize framing techniques to enclose any Evolve Clothing Gallery trademark, logo or other proprietary information (including the images found at the sites, the content of any text or the layout/design of any page or form contained on a page) without Evolve Clothing Gallery's express written consent</span></li>
+                    <li><span>Use any meta tags or any other “hidden text” utilizing an Evolve Clothing Gallery’s name, trademark, or product name without Evolve Clothing Gallery's express written consent</span></li>
+                </ol>
+                <p>Any unauthorized use of the sites will terminate the permission or license granted by these terms of use, will result in you being barred from use of the site, and may violate applicable law including copyright laws, trademark laws (including trade dress), and communications regulations and statutes.</p>
+            </li>
+            <li>
+                <h3>
+                    COPYRIGHT</h3>
+                <p>The content and the site, as well as the selection and arrangement thereof, are the sole property of Evolve Clothing Gallery and/or its licensors and are protected by patent, copyright, trademark and other intellectual property laws and may not be used except in accordance with these terms of use or with Evolve Clothing Gallery's express written consent. Other than as necessary for your use of the site in accordance with these terms of use, Evolve Clothing Gallery grants no other privileges or rights in the content to you, and you must keep intact all patent, copyright, trademark and other proprietary notices on the content. Any content owned by Evolve Clothing Gallery's licensors may be subject to additional restrictions. Except as expressly provided in these terms of use, no part of the site and no content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way to any other computer, server, web site or other medium for publication or distribution or for any commercial enterprise, without Evolve Clothing Gallery's express prior written consent.</p>
+            </li>
+            <li>
+                <h3>
+                    TRADEMARK</h3>
+                <p>All trademarks, service marks, trade names, logos and trade dress, whether registered or unregistered (collectively the “marks”) that appear on the site are proprietary to Evolve Clothing Gallery's or such marks’ respective owners. You may not display or reproduce the marks other than with the prior written consent of Evolve Clothing Gallery, and you may not remove or otherwise modify any trademark notices from any content. The marks are protected by trademark, trade dress, copyright, and various other intellectual property rights and unfair competition laws.</p>
+                <p>In addition, all page headers, custom graphics, button icons, and scripts are trademarks, service marks, trade names and/or trade dress of Evolve Clothing Gallery or their respective owners, and may not be copied, imitated, or used, in whole or in part, without the prior written permission of Evolve Clothing Gallery. The Evolve Clothing Gallery, Evolve Clothing Gallery logo design, and the Evolve Clothing Gallery brand marks are registered at the United States of America Intellectual Property Office, U.S. Patent and trademark office, and in various other jurisdictions around the world.</p>
+            </li>
+            <li>
+                <h3>
+                    YOUR ACCOUNT
+                    </h3>
+                <p>In order to purchase products or services through the use of the site, you can establish an account with Evolve Clothing Gallery. You are solely responsible for (i) maintaining the security and confidentiality of your account and your account password; (ii) restricting access to your computer and your account; and (iii) keeping your email address listed on your account current. You are solely responsible and liable for all activities, including, without limitation, all purchases of products and services through the use of the site that occur under your account or your account password.</p>
+                <p>You acknowledge and agree that Evolve Clothing Gallery may access, preserve, and disclose your account information, all submissions (as defined below), all communications to and from you, all information relating to your use of the site, and all information relating to the use of the site under your account or account password if Evolve Clothing Gallery is required to do so by law or legal process or if Evolve Clothing Gallery determines, in its sole discretion, that such action is necessary to protect the rights of Evolve Clothing Gallery, third parties, and other users of the site or for purposes of responding to your request for customer service. Evolve Clothing Gallery's right to disclose any such information shall govern over any terms of our privacy policy.</p>
+            </li>
+            <li>
+                <h3>
+                    TERMS OF SALE</h3>
+                <p>All product sales from the site are governed by any terms of sale that may be posted on the site. You should refer to our contact page to learn more about applicable product warranties, our return policy, and shipping terms. By ordering and/or accepting delivery of the products, you agree to be bound by these terms of sale. The terms of sale are subject to change without prior notice at any time, in Evolve Clothing Gallery's sole discretion so you should review the terms of sale each time you make a purchase.</p>
+            </li>
+            <li>
+                <h3>
+                    ELECTRONIC COMMUNICATIONS</h3>
+                <p>You consent to receive electronic communications from Evolve Clothing Gallery either in the form of email sent to you at the email address listed on your account or by communications posted on the site. You acknowledge and agree that any electronic communication in the form of such email or posting on the site shall satisfy any legal requirement that such communication be in writing.</p>
+            </li>
+            <li>
+                <h3>
+                    MODIFICATIONS</h3>
+                <p>Any content offered or posted on the site is subject to modification or discontinuation at any time and from time to time without notice or obligation to you. Without limiting the foregoing, Evolve Clothing Gallery reserves the right, in its sole discretion, to charge fees for the use or purchase of, or access to, any products, services or content offered through the site, at any time and from time to time.</p>
+            </li>
+            <li>
+                <h3>
+                    INDEMNIFICATION</h3>
+                <p>You agree to defend, indemnify and hold harmless Evolve Clothing Gallery, its affiliates and their respective directors, officers, employees and agents against any losses, liabilities, claims, expenses (including attorney’s fees) arising out of your account, your use of the site, and your submissions and any personal rights contained therein.</p>
+            </li>
+            <li>
+                <h3>
+                    WARRANTIES & DISCLAIMERS</h3>
+                <p>The site, submissions and any content provided via the site, including links, are provided on an “as is” and “as available” basis with no warranty of any kind. To the maximum extent permitted by law, Evolve Clothing Gallery disclaims all representations, warranties and conditions, express or implied, with respect to the site, submissions, the content and any products or services, including, without limitation, warranties or conditions of merchantable quality, merchantability, durability, fitness for a particular purpose, title, non-infringement, freedom from errors, omissions, computer viruses or other malicious or unauthorized code or programs, and implied warranties or conditions arising from course of dealing or course of performance.</p>
+                <p>In addition, Evolve Clothing Gallery does not represent or warrant that the site, submissions, content or any products, services or any other information accessible via the site is secure, accurate, complete or current or that any particular products or inventory will be available at any particular store. As a condition of your use of the site, you warrant to Evolve Clothing Gallery that you will not use the site for any purpose that is unlawful or prohibited by these terms of use.</p>
+                <p>In addition, the site may contain typographical errors or inaccuracies and may not be complete or current. Evolve Clothing Gallery therefore reserves the right to correct any errors, inaccuracies or omissions (including after an order has been submitted) and to change or update information at any time without prior notice. Please note that such errors, inaccuracies or omissions may relate to pricing and availability, and to the extent permitted by applicable law, Evolve Clothing Gallery reserves the right to cancel or refuse to accept any order placed based on incorrect pricing or availability information. We apologize for any inconvenience.</p>
+                <p>In addition, if an item becomes unavailable for whatever reason after an order is accepted, Evolve Clothing Gallery may terminate the order by giving you written notice. In such event, Evolve Clothing Gallery will contact you to arrange for a refund or provision of credit against future purchase. We apologize for any inconvenience.</p>
+            </li>
+            <li>
+                <h3>
+                    LIMITATION OF LIABILITY</h3>
+                <p>Evolve Clothing Gallery and its parent, affiliates, subsidiaries, officers, directors, employees, agents, suppliers, licensors and third party partners will not be liable for any indirect, special, punitive, incidental, exemplary, multiplied or consequential damages, lost profits or revenues or failure to realize expected savings, or any damages whatsoever, whether or not such party has been previously advised of the possibility of such damages, whether under contract, tort (including negligence) or any other theory, including, without limitation, arising out of or in connection with any loss or other damages in connection with any unavailability or nonperformance of the site, errors, omissions, viruses and malicious code. These limitations will apply notwithstanding any failure of essential purpose of any limited remedy.</p>
+                <p>Certain laws do not allow limitations on implied warranties or conditions, or the exclusion or limitation of certain damages. If these laws apply, some or all of the above disclaimers, exclusions, or limitations, may not apply to you, and you may have additional rights to those contained herein.</p>
+            </li>
+            <li>
+                <h3>
+                    COPYRIGHT & TRADEMARK INFRINGMENTS</h3>
+                <p>Notification: Evolve Clothing Gallery respects the intellectual property rights of others, and we ask you to do the same. Evolve Clothing Gallery may, in appropriate circumstances and at our discretion, terminate service and/or access to the site for users who infringe the intellectual property rights of others. Please also note that for copyright infringements under section 512(f) of the U.S. Copyright Act, any person who knowingly materially misrepresents that material or activity is infringing may be subject to liability.</p>
+            </li>
+            <li>
+                <h3>
+                    GOVERNING LAW</h3>
+                <p>All litigation, court proceedings, arbitration proceedings, mediation proceedings, lawsuits, court hearings and other hearings or actions initiated in connection with the site and/or the content must and will be venued exclusively in Somerset, NJ. These terms of use and the relationship between you and Evolve Clothing Gallery will be governed by the laws of the United States of America and the federal laws of united states applicable therein, without giving effect to principles of conflict of laws of any jurisdiction. The international sale of goods act of the United States of America and the united nations convention on contracts for the international sale of goods will not apply in any way to these terms of use or to the transactions contemplated by these terms of use.</p>
+            </li>
+            <li>
+                <h3>
+                    MISCELLANEOUS</h3>
+                <p>If any provision of these terms of use is held to be invalid, illegal or unenforceable in any respect under any applicable law or rule in any jurisdiction, such invalidity, illegality or unenforceability will not affect the effectiveness or validity of any provision in any other jurisdiction, and these terms of use will be reformed, construed and enforced in such jurisdiction as if such provision had never been contained herein. Any headings or titles herein are for convenience only. The official language of these terms of use exclusively shall be, and all communications and agreements between Evolve Clothing Gallery and you and any proceedings in connection with these terms of use and/or your use of the site, exclusively shall be made in, the english language. Evolve Clothing Gallery and you waive any rights we may have under any other law to have these terms of use written in another language, and any translation of this terms of use will be for convenience only. You agree that no joint venture, partnership, employment, or agency relationship exists between you and Evolve Clothing Gallery as a result of these terms of use, our privacy policy or any use of the site. Evolve Clothing Gallery's performance of these terms of use is subject to existing laws and legal process, and nothing contained in these terms of use or our privacy policy is in derogation of Evolve Clothing Gallery's right to comply with law enforcement requests or requirements relating to your use of the site or information provided to or gathered by Evolve Clothing Gallery with respect to such use. These terms of use and our privacy policy constitute the entire agreement between you and Evolve Clothing Gallery with respect to the site, and they supersede all prior or contemporaneous communications and proposals, whether electronic, oral or written, between you and Evolve Clothing Gallery with respect to the site.</p>
+                <p>And its affiliates, subsidiaries, officers, directors, employees, agents, suppliers, licensors and third party partners will not be liable for any indirect, special, punitive, incidental, exemplary, multiplied or consequential damages, lost profits or revenues or failure to realize expected savings, or any damages whatsoever, whether or not such party has been previously advised of the possibility of such damages, whether under contract, tort (including negligence) or any other theory, including, without limitation, arising out of or in connection with any loss or other damages in connection with any unavailability or nonperformance of the site, errors, omissions, viruses and malicious code. These limitations will apply notwithstanding any failure of essential purpose of any limited remedy.</p>
+                <p>Certain laws do not allow limitations on implied warranties or conditions, or the exclusion or limitation of certain damages. If these laws apply, some or all of the above disclaimers, exclusions, or limitations, may not apply to you, and you may have additional rights to those contained herein.</p>
+            </li>
+        </ul>
+    </section>
+    <a href="#" class="btnTop"><img src="images/ico_top.svg" alt="gotopicon"></a>
+    <footer>
+        <div>
+            <div>
+                <a href="contact.html">CONTACT US</a>
+                <a href="returns.html">RETURNS & SHIPPING</a>
+                <a href="terms.html">TERMS & CONDITION</a>
+            </div>
+            <div>
+                 <p>
+                    <span>evolveclothinggallery@gmail.com<br>
+                        <a href="+82908.231.8933">908.231.8933</a></span>
+                    <span>80 W Main Street
+                        Somerville, NJ 08876</span>
+                </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/evolveclothinggallery/" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/evolve_clothing" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/evolveclothing/" target="_blank">instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>NEWSLETTER</span>
+                <form action="index.html">
+                    <input type="email" placeholder="Enter your email here*" title="insert your email">
+                    <input type="submit" value="Join">
+                </form>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><span>we Accept</span></li>
+                <li><img src="images/pic_paypal.svg" alt="paypal"></li>
+                <li><img src="images/pic_mastercard.svg" alt="mastercard"></li>
+                <li><img src="images/pic_americanexpress.svg" alt="americanexpress"></li>
+                <li><img src="images/pic_visa.svg" alt="visa"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

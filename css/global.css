@@ -1,0 +1,1235 @@
+body{
+    overflow-x: hidden; font-family: 'Poppins';
+}
+#cartpanel > div h2,
+#cartpanel form > ul li,
+#cartpanel form > div:first-of-type strong > span,
+#loginContainer > [id$="Container"] > *,
+.indexContainer > .productShow > h3,
+.indexContainer > div:nth-child(3) > ol li strong,
+.indexContainer > div:nth-child(3) > ol li p,
+#rangeInput > div:last-child > [data-sign] span,
+.listContainer aside form fieldset label,
+.listContainer .productList ul li div p,
+.detailContainer div ul li a,
+.detailContainer div ul li span,
+.detailContainer > div:first-child > span a,
+.detailContainer > div:last-child > div:last-child span,
+.detailContainer > div:last-child > div:last-child > div:first-of-type li,
+.customerCart > div:first-child h3,
+.customerCart > div:first-child ul li div:first-of-type dl dt,
+.customerCart > div:first-child > div > *,
+.customerCart > div:last-child h3,
+.customerCart > div:last-child > div:first-of-type > div:first-of-type span,
+.customerCart > div:last-child > div:first-of-type .openPop,
+.customerCart > div:last-child div:last-of-type span:first-child,
+.customerCart > div:last-child p,
+.deliveryInfo div:first-of-type > *,
+.deliveryInfo #dContainer form fieldset label
+.deliveryInfo #dContainer form fieldset #d_Country,
+.deliveryInfo #dContainer form fieldset #d_Regio1n,
+.deliveryInfo div .closeBtn,
+.deliveryInfo > div:last-child h3,
+.deliveryInfo > div:last-child h3 b,
+.deliveryInfo > div:last-child a,
+.deliveryInfo > div:last-child form ul li dl > *:not(:last-child),
+.deliveryInfo > div:last-child form > div:last-of-type div:first-child > *,
+.deliveryInfo > div:last-child form > div:last-of-type span:first-child,
+.customer ul li p,
+.return ul li p,
+.term ul li p,
+.term ul li ol li span{
+    font-weight: 300;
+}
+header div a,
+header nav ul li a,
+footer > div:first-child > div:first-child a,
+footer > div:first-child > div:nth-child(2) p,
+footer > div:first-child > div:last-child form input[type='email'],
+footer > div:first-child > div:last-child form input[type='submit'],
+.indexContainer > div:first-child dl,
+.indexContainer > div:first-child a,
+.indexContainer > .productShow > h3 > b,
+.indexContainer > div:last-child p,
+.listContainer aside h3,
+.listContainer aside mark,
+.listContainer aside ol li:not(:first-child) a,
+.listContainer aside form fieldset legend,
+.listContainer .productList ul li div span,
+.listContainer .productList > div,
+.detailContainer > div:last-child > div:last-child form label,
+.detailContainer > div:last-child > div:last-child form select,
+.detailContainer > div:last-child > div:last-child form div span,
+.detailContainer > div:last-child > div:last-child form input[type='submit'],
+.detailContainer > div:last-child > div:last-child > div:first-of-type h4,
+#addressPopup div label,
+#addressPopup div #city,
+.customerCart > div:first-child ul li div:first-of-type dl dd,
+.customerCart > div:first-child ul li div:last-of-type span,
+.customerCart > div:first-child ul li #price,
+.customerCart > div:last-child > div:first-of-type > div:last-of-type span,
+.customerCart > div:last-child div:last-of-type span:last-child,
+.customerCart > div:last-child a,
+.customerCart > div:last-child strong,
+.deliveryInfo div form .openBtn,
+.deliveryInfo > div:last-child form ul li dl dd:last-of-type,
+.deliveryInfo > div:last-child form > div:first-of-type mark,
+.deliveryInfo > div:last-child form > div:first-of-type div > *,
+.deliveryInfo > div:last-child form > div:last-of-type div:last-child > *,
+.deliveryInfo > div:last-child form > div:last-of-type span:last-child,
+.customer ul li:not(:first-child) h3,
+.return ul li h3,
+.term ul li h3{
+    font-weight: 400;
+}
+#cartpanel > div input[class='closeBtn'],
+#cartpanel form > ul li > div:first-of-type div.numberComponent input[type='button'],
+#cartpanel form > div:first-of-type input[type='submit'],
+header div input[type='button'],
+footer > div:first-child > div:last-child form input[type='submit'],
+.listContainer .productList > div{
+    cursor: pointer;
+}
+#cartpanel form > ul li > div:first-of-type input[type='button'],
+header div input[type='button']{
+    border: none; background-color: transparent;  padding: 0; 
+}
+
+
+
+@media screen and (max-width:767px){
+
+    #cartpanel{
+        box-sizing: border-box; position: fixed; top: 0; right: -600px; overflow-x: hidden;
+        width: 60%; height: 100%; z-index: 60; background-color: #ffffff; box-shadow: -9px 11px 20px #221815;
+        display: block; transition: right 1s ease-in-out;
+    }
+    @media screen and (max-width:400px) {
+        #cartpanel{
+            box-sizing: border-box; position: fixed; top: 0; right: -770px; overflow-x: hidden;
+            width: 100%; height: 100%; z-index: 60; background-color: #ffffff;
+            display: block; transition: right 1s ease-in-out; box-shadow: none;
+        }
+    }
+    #cartpanel.active{
+        right: 0;
+    }
+    #cartpanel > div{
+        width: 100%; padding: 38px 2%; position: relative; background-color: #03346E; box-sizing: border-box;
+    }
+    #cartpanel > div input[class='closeBtn']{
+        text-indent: -9999px; background: url('../images/bul_arrow_right_cart.svg') center no-repeat; width: 19px;
+        position: absolute; left: 2%; bottom: 38px; border: none; cursor: pointer;
+    }
+    #cartpanel > div h2{
+        text-align: center; color: #ffffff; font-size: 20px;
+    }
+    #cartpanel form > ul{
+        padding: 30px 3.6%; border-bottom: 2px solid #dcdcdc; box-sizing: border-box;
+    }
+    #cartpanel form > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartpanel form > ul li a{
+        text-align: center; width: 35%; display: block; border: 1px solid #bcbcbc; box-sizing: border-box;
+        margin-right: 5%; float: left; max-width: 140px;
+    }
+    #cartpanel form > ul li a img{
+        width: 95%; max-width: 140px;
+    }
+    #cartpanel form > ul li > div:first-of-type{
+        float: left; width: 60%; position: relative;
+    }
+    #cartpanel form > ul li > div:first-of-type dl{
+        font-size: 14px; width: 100%;
+    }
+    #cartpanel form > ul li > div:first-of-type dl,
+    #cartpanel form > ul li > div:first-of-type dl dt{
+        margin-bottom: 10px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent{
+        border: 2px solid #000000; width: 75px; padding: 0 5px; box-sizing: border-box; text-align: center; line-height: 23px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[type='button']{
+        line-height: 25px; color: #000;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="-"]{
+        padding-right: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="+"]{
+        padding-left: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent span{
+        font-size: 12px;
+    }
+    #cartpanel form > ul li > div:first-of-type input[value='Remove']{
+        position: absolute; right: 0; bottom: 0; display: block; cursor: pointer; text-indent: -9999px; background: url('../images/bul_delete.svg') no-repeat; width: 20px;
+    }
+    @media screen and (max-width:470px) {
+        #cartpanel form > ul li > div:first-of-type input[value='Remove']{
+            display: none;
+        }
+    }
+    #cartpanel form > div:first-of-type{
+        position: absolute; bottom: 0; box-sizing: border-box; padding-bottom:30px; width: 100%; 
+    }
+    #cartpanel form > div:first-of-type strong{
+        padding-bottom: 35px; border-bottom: 1px solid #dcdcdc; margin-bottom: 30px; display: block; 
+    }
+    #cartpanel form > div:first-of-type strong > span{
+        display: block; padding-left: 10%; font-size: 22px;
+    }
+    #cartpanel form > div:first-of-type strong > span:first-child{
+        margin-bottom: 15px;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']{
+        width: 80%; margin: 0 10%; border: none; background-color: #30bdff; line-height: 35px;
+        font-size: 12px; color: #ffffff;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']:hover{
+        opacity: 0.7;
+    }
+    #loginContainer{
+        width: 100%; position: fixed; padding: 50px 0; display: none; background-color: #fff; height: 100%; z-index: 60; 
+        overflow-y: hidden; 
+    }
+    #loginContainer.active{
+        display: flex; justify-content: center; align-items: center;
+    }
+    #loginContainer > ul{
+        display: none;
+    }
+    #loginContainer > input[value='close']{
+        appearance: none; border: none; background-color: transparent; text-indent: -9999px; background: url('../images/ico_close.svg') no-repeat; width: 22px; position: absolute; right: 5%; top: 50px;
+        cursor: pointer; transform: rotate(0deg); transition: transform 0.4s ease-in-out;
+    }
+    #loginContainer > input[value='close']:hover{
+        transform: rotate(180deg);
+    }
+    #loginContainer > [id$="Container"]{
+        text-align: center; width: 100%;
+    }
+    #loginContainer > [id$="Container"] h2{
+        font-size: 40px; margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] p{
+        color: #2f2e2e; font-size: 18px; line-height: 24px; max-width: 370px; margin: 0 auto 30px; width: 100%;
+    }
+    #loginContainer > [id$="Container"] p > mark{
+        font-weight: inherit; font-size: inherit; margin-left: 5px; color: #30bdff; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"],
+    #loginContainer > [id$="Container"] > div{
+        display: none;
+    }
+    #loginContainer > [id$="Container"].active,
+    #loginContainer > [id$="Container"] > div.active{
+        display: block;
+    }
+    #loginContainer > [id$="Container"]:not(:last-of-type) div:first-of-type > *{
+        display: block; width: 320px; margin: 0 auto;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type > *:not(:last-child),
+    #loginContainer > [id$="Container"] div form fieldset,
+    #loginContainer > [id$="Container"] div form span{      
+        margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type{
+        line-height: 45px; border: 1px solid #a9a9a9; cursor: pointer; font-size: 14px; color: #2f2e2e; font-weight: 500; opacity: 0.7; transition: opacity 0.4s ease-in-out;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:hover,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type:hover{
+        opacity: 1;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a{
+        background-repeat: no-repeat; background-position: 4%; background-size: 24px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:first-of-type{
+        background-image: url("../images/ico_google.svg");
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:last-of-type{
+        background-image: url("../images/ico_facebooklogof.svg"); background-color: #1878f2; color: #fff;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type,
+    #loginContainer > [id$="Container"] div form span{
+        font-size: 14px; line-height: 19px; position: relative;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before,
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 40%; margin-bottom: 2px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        margin-left: 10px; 
+    }
+    @media  screen and (max-width:425px) {
+        #loginContainer > [id$="Container"]:not(:last-of-type) div:first-of-type > *{
+            width: 75%;
+        }
+    }
+    @media screen and (max-width:330px){
+         #loginContainer > [id$="Container"] div:first-of-type a{
+            text-indent: -9999px; background-position: center;
+        }
+        #loginContainer > [id$="Container"] div:first-of-type a:first-of-type{
+            background-image: url("../images/ico_google.svg");
+        }
+        #loginContainer > [id$="Container"] div:first-of-type a:last-of-type{
+            background-image: url("../images/ico_facebooklogof.svg"); background-color: #1878f2; color: #fff;
+        }
+        #loginContainer > [id$="Container"] div:first-of-type span:last-of-type{
+            text-indent: -9999px; background: url('../images/ico_mail.svg') center no-repeat;
+        }
+    }
+    @media  screen and (max-width:250px) {
+        #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before,
+        #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+            display: none;
+        }
+    }
+    #loginContainer > [id$="Container"] div form fieldset *,
+    #loginContainer > [id$="Container"] div form fieldset > *,
+    #loginContainer #fContainer input{
+        display: block; margin: 0 auto; width: 320px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset label{
+        text-align: left; font-size: 16px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type){
+        line-height: 40px; border: none; border-bottom: 1px solid black; font-size: 14px; margin-bottom: 20px; 
+        background-color: transparent; border-radius: 0;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type):focus{
+        outline: none; border-color: #1878f2;
+    }
+    #loginContainer > [id$="Container"] div form fieldset mark{
+        text-align: left; text-decoration: underline; font-weight: 300; font-size: 14px; margin-bottom: 15px; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input[type='submit']{
+        color: #fff; line-height: 45px; appearance: none; border: none; background-color: #30bdff; text-align: center; font-size: 16px;
+        cursor: pointer; 
+    }
+    #loginContainer > [id$="Container"] div form span{
+        display: block;
+    }
+    #loginContainer > [id$="Container"] div form span::before,
+    #loginContainer > [id$="Container"] div form span::after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 100px; margin-bottom: 3px;
+    }
+    #loginContainer > [id$="Container"] div form span::before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div form span::after{
+        margin-left: 10px;
+    }
+    #loginContainer > [id$="Container"] div form a{
+        text-indent: -9999px; display: inline-block; background-repeat: no-repeat; background-position: center;  width: 25px; height: 25px;
+    }
+    #loginContainer > [id$="Container"] div form a:first-of-type{
+        background-image: url('../images/ico_google.svg'); margin-right: 10px; 
+    }
+    #loginContainer > [id$="Container"] div form a:last-of-type{
+        background-image: url('../images/ico_facebooklogo.svg'); margin-left: 10px; 
+    }
+    #loginContainer #fContainer p{
+        font-size: 16px; margin-bottom: 60px;
+    }
+    #loginContainer #fContainer div input[type='submit']{
+        margin-top: 20px;
+    }
+    header{
+        padding-bottom: 50px;
+    }
+    header div{
+        background-color: #021526; display: flex; justify-content: end; align-items: center; padding: 17px 3.6%; box-sizing: border-box;
+    }
+    header div a{
+        font-size: 16px; color: #ffffff; text-decoration: none;
+    }
+    header div a:last-of-type{
+        margin: 0 0 0 2%; padding-left: 43px; background: url('../images/bul_login.svg') left no-repeat; line-height: 30px;
+    }
+    header div input[type='button']{
+        margin-left: 0.5%; text-indent: -9999px; background: url('../images/bul_shoppingcart.svg') center no-repeat;
+        width: 20px; height: 24px;
+    }
+    @media screen and (max-width:350px) {
+        header div a:first-of-type{
+            display: none;
+        }
+        header div a:last-of-type{
+            margin: 0 5% 0 3%; background: url('../images/bul_person.svg') left no-repeat; background-size: cover; width: 24px; height: 24px; text-indent: -9999px; padding: 0;
+        }
+        header div input[type='button']{
+            margin-left: 0.5%; text-indent: -9999px; background: url('../images/bul_shoppingcart.svg') center no-repeat;
+            width: 20px; height: 24px;
+        }
+    }
+    header h1{
+        max-width: 115px; margin: 0 auto; padding-top: 45px; width: 100%;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header nav{
+        text-align: center; padding-top: 25px;
+    }
+    header nav ul li{
+       display: inline-block;
+    }
+    header nav ul li:not(:last-child){
+        margin-right: 2%;
+    }
+    header nav ul li a{
+        font-size: 16px; color: #000000; 
+    }
+    header nav ul li a:hover{
+        opacity: 0.7; 
+    }
+    .btnTop{
+        position: fixed; z-index: 50; right: calc(15% - 40px); width: 40px; filter: drop-shadow(0 9px 5px rgba(0,0,0,0.15)); 
+        bottom: 85px;
+    }
+    .btnTop img{
+        width: 100%; display: block; transition: transform 0.3s ease-in-out;
+    }
+    .btnTop img:hover{
+        transform: translateY(-15%);
+    }
+    footer{
+        background-color: #021526; padding: 50px 3.6%; position: relative; bottom: 0; box-sizing: border-box;
+    }
+    footer > div:first-child > *{
+        width: 100%; 
+    }
+    footer > div:first-child > *:not(:last-child){
+        border-bottom: 1px solid #fff; padding-bottom: 20px; margin-bottom: 40px;
+    }
+    footer > div:first-child > div:first-child::before{
+        content: 'Services';
+    }
+    footer > div:first-child > div:nth-child(2):before{
+        content: 'Evolve clothing gallery';
+    }
+    footer > div:first-child > div:first-child::before,
+    footer > div:first-child > div:nth-child(2):before{
+        color: #fff; text-transform: uppercase; letter-spacing: 3px;display: block; width: 100%; font-size: 20px;
+    }
+    footer > div:first-child > div:first-child a,
+    footer > div:first-child > div:nth-child(2) p > span,
+    footer > div:first-child > div:last-child span{
+        font-size: 14px; color: #ffffff;
+    }
+    footer > div:first-child > div:first-child a{
+        text-align: left; display: block; 
+    }
+    footer > div:first-child > div:first-child a:first-child{
+        margin-top: 25px;
+    }
+    footer > div:first-child > div:first-child a:not(:first-child){
+        margin-top: 50px;
+    }
+    footer > div:first-child > div:nth-child(2) p{
+        margin-top: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) p span{
+        display: block; line-height: 20px;
+    }
+    footer > div:first-child > div:nth-child(2) p span > br{
+        display: none;
+    }
+    footer > div:first-child > div:nth-child(2) p span > a{
+        color: inherit;
+    }
+    footer > div:first-child > div:nth-child(2) p span:last-child,
+    footer > div:first-child > div:nth-child(2) ul{
+        margin-top: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li{
+        display: inline-block;
+    }
+    footer > div:first-child > div:nth-child(2) ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat; background-position: center; width: 25px; height: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(1) a{
+        background-image: url('../images/ico_facebook.svg'); 
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(2) a{
+        background-image: url('../images/ico_twitter.svg');
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(3) a{
+        background-image: url('../images/ico_instagram.svg'); 
+    }
+    footer > div:first-child > div:last-child{
+        position: relative;
+    }
+    footer > div:first-child > div:last-child span{
+        margin-bottom: 50px; display: block; 
+    }
+    footer > div:first-child > div:last-child form input[type='email']{
+        border: none; background-color: transparent; border-bottom: 1px solid #ffffff; color: #ffffff; width: 96.4%; border-radius: 0;
+    }
+    footer > div:first-child > div:last-child form input[type='email']::placeholder{
+        font-size: 11px; line-height: 20px; color: #ffffff;
+    }
+    footer > div:first-child > div:last-child form input[type='email']:focus{
+        outline: none;
+    }
+    footer > div:first-child > div:last-child form input[type='submit']{
+        color: #000; position: absolute; bottom: 0; right: -4px; border: none; border-radius: 0; background-color: #ffffff; line-height: 28px;
+    }
+    footer > div:last-child{
+        padding-top: 50px;
+    }
+    footer > div:last-child ul{
+        text-align: center; display: flex; justify-content: center;
+    }
+    footer > div:last-child ul li:first-child{
+        margin-right: 25px;
+    }
+    footer > div:last-child ul li span{
+        font-size: 14px; color: #ffffff; line-height: 35px; 
+    }
+    footer > div:last-child ul li:not(:first-child){
+        width: 50px; 
+    }
+    footer > div:last-child ul li:not(:first-child,:nth-child(2)){
+        margin-left: 10px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+
+    #cartpanel{
+        box-sizing: border-box; position: fixed; top: 0; right: -600px; overflow-x: hidden;
+        width: 35%; height: 100%; z-index: 60; background-color: #ffffff; box-shadow: -9px 11px 20px #221815;
+        display: block; transition: right 1s ease-in-out;
+    }
+    #cartpanel.active{
+        right: 0;
+    }
+    #cartpanel > div{
+        width: 100%; padding: 38px 10%; position: relative; background-color: #03346E; box-sizing: border-box;
+    }
+    #cartpanel > div input[class='closeBtn']{
+        text-indent: -9999px; background: url('../images/bul_arrow_right_cart.svg') center no-repeat; width: 19px;
+        position: absolute; left: 10%; bottom: 38px; border: none; cursor: pointer;
+    }
+    #cartpanel > div h2{
+        text-align: center; color: #ffffff; font-size: 20px;
+    }
+    #cartpanel form > ul{
+        padding: 30px 3%; border-bottom: 2px solid #dcdcdc; box-sizing: border-box;
+    }
+    #cartpanel form > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartpanel form > ul li a{
+        text-align: center; width: 37%; display: block; border: 1px solid #bcbcbc; box-sizing: border-box;
+        margin-right: 5%; float: left;
+    }
+    #cartpanel form > ul li a img{
+        width: 100%; max-width: 140px;
+    }
+    #cartpanel form > ul li > div:first-of-type{
+        float: left; width: 58%; position: relative;
+    }
+    #cartpanel form > ul li > div:first-of-type dl{
+        font-size: 14px; width: 100%;
+    }
+    #cartpanel form > ul li > div:first-of-type dl,
+    #cartpanel form > ul li > div:first-of-type dl dt{
+        margin-bottom: 10px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent{
+        border: 2px solid #000000; width: 75px; padding: 0 5px; box-sizing: border-box; text-align: center; line-height: 23px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[type='button']{
+        line-height: 25px; color: #000;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="-"]{
+        padding-right: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="+"]{
+        padding-left: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent span{
+        font-size: 12px;
+    }
+    #cartpanel form > ul li > div:first-of-type input[value='Remove']{
+        position: absolute; font-size: 14px; right: 0; bottom: 0; text-decoration: underline; cursor: pointer; color: #000000
+    }
+    #cartpanel form > div:first-of-type{
+        position: absolute; bottom: 0; box-sizing: border-box; padding-bottom:30px; width: 100%; 
+    }
+    #cartpanel form > div:first-of-type strong{
+        padding-bottom: 35px; border-bottom: 1px solid #dcdcdc; margin-bottom: 30px; display: block; 
+    }
+    #cartpanel form > div:first-of-type strong > span{
+        display: block; padding-left: 10%; font-size: 22px;
+    }
+    #cartpanel form > div:first-of-type strong > span:first-child{
+        margin-bottom: 15px;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']{
+        width: 80%; margin: 0 10%; border: none; background-color: #30bdff; line-height: 35px;
+        font-size: 12px; color: #ffffff;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']:hover{
+        opacity: 0.7;
+    }
+    #loginContainer{
+        width: 100%; position: fixed; padding: 50px 0; display: none; background-color: #fff; height: 100%; z-index: 60; 
+        overflow-y: hidden; 
+    }
+    #loginContainer.active{
+        display: block;
+    }
+    #loginContainer > ul{
+        position: absolute; width: 100%; top: -900px; transition: top 0.7s ease-in-out;  z-index: 10;
+    }
+    #loginContainer > ul:first-of-type{
+        left: 1%; 
+    }
+    #loginContainer:hover > ul:first-of-type{
+        top: 100px;
+    }
+    #loginContainer > ul li{
+        display: inline-block; position: relative; width: 13.5%;
+    }
+    #loginContainer > ul li img{
+        width: 100%; display: block; transform: translateY(0); opacity: 0.5; transition: all 0.4s ease-in-out;
+    }
+    #loginContainer > ul li:hover img{
+        transform: translateY(-20px); opacity: 1;
+    }
+    #loginContainer > input[value='close']{
+        appearance: none; border: none; background-color: transparent; text-indent: -9999px; background: url('../images/ico_close.svg') no-repeat; width: 22px; position: absolute; right: 5%;
+        cursor: pointer; transform: rotate(0deg); transition: transform 0.4s ease-in-out;
+    }
+    #loginContainer > input[value='close']:hover{
+        transform: rotate(180deg);
+    }
+    #loginContainer > [id$="Container"]{
+        position: absolute; text-align: center; left: calc(70% - 322px); top: calc(650px - 342px); z-index: 20;
+    }
+    #loginContainer > [id$="Container"] h2{
+        font-size: 48px; margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] p{
+        color: #2f2e2e; font-size: 18px; line-height: 24px; max-width: 370px; margin: 0 auto 30px;
+    }
+    #loginContainer > [id$="Container"] p > mark{
+        font-weight: inherit; font-size: inherit; margin-left: 5px; color: #30bdff; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"],
+    #loginContainer > [id$="Container"] > div{
+        display: none;
+    }
+    #loginContainer > [id$="Container"].active,
+    #loginContainer > [id$="Container"] > div.active{
+        display: block;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type > *{
+        display: block; width: 320px; margin: 0 auto;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type > *:not(:last-child),
+    #loginContainer > [id$="Container"] div form fieldset,
+    #loginContainer > [id$="Container"] div form span{      
+        margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type{
+        line-height: 45px; border: 1px solid #a9a9a9; cursor: pointer; font-size: 14px; color: #2f2e2e; font-weight: 500; opacity: 0.7; transition: opacity 0.4s ease-in-out;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:hover,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type:hover{
+        opacity: 1;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a{
+        background-repeat: no-repeat; background-position: 15px; background-size: 24px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:first-of-type{
+        background-image: url("../images/ico_google.svg");
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:last-of-type{
+        background-image: url("../images/ico_facebooklogof.svg"); background-color: #1878f2; color: #fff;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type,
+    #loginContainer > [id$="Container"] div form span{
+        font-size: 14px; line-height: 19px; position: relative;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before,
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 140px; margin-bottom: 2px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        margin-left: 10px; 
+    }
+    #loginContainer > [id$="Container"] div form fieldset *,
+    #loginContainer > [id$="Container"] div form fieldset > *,
+    #loginContainer #fContainer input{
+        display: block; margin: 0 auto; width: 320px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset label{
+        text-align: left; font-size: 16px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type){
+        line-height: 40px; border: none; border-bottom: 1px solid black; font-size: 14px; margin-bottom: 20px; 
+        background-color: transparent; border-radius: 0;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type):focus{
+        outline: none; border-color: #1878f2;
+    }
+    #loginContainer > [id$="Container"] div form fieldset mark{
+        text-align: left; text-decoration: underline; font-weight: 300; font-size: 14px; margin-bottom: 15px; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input[type='submit']{
+        color: #fff; line-height: 45px; appearance: none; border: none; background-color: #30bdff; text-align: center; font-size: 16px;
+        cursor: pointer; 
+    }
+    #loginContainer > [id$="Container"] div form span{
+        display: block;
+    }
+    #loginContainer > [id$="Container"] div form span::before,
+    #loginContainer > [id$="Container"] div form span::after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 100px; margin-bottom: 3px;
+    }
+    #loginContainer > [id$="Container"] div form span::before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div form span::after{
+        margin-left: 10px;
+    }
+    #loginContainer > [id$="Container"] div form a{
+        text-indent: -9999px; display: inline-block; background-repeat: no-repeat; background-position: center;  width: 25px; height: 25px;
+    }
+    #loginContainer > [id$="Container"] div form a:first-of-type{
+        background-image: url('../images/ico_google.svg'); margin-right: 10px; 
+    }
+    #loginContainer > [id$="Container"] div form a:last-of-type{
+        background-image: url('../images/ico_facebooklogo.svg'); margin-left: 10px; 
+    }
+    #loginContainer #fContainer p{
+        font-size: 16px; margin-bottom: 60px;
+    }
+    #loginContainer #fContainer div input[type='submit']{
+        margin-top: 20px;
+    }
+    header{
+        padding-bottom: 50px;
+    }
+    header div{
+        background-color: #021526; display: flex; justify-content: end; align-items: center; padding: 17px 0;
+    }
+    header div a{
+        font-size: 16px; color: #ffffff; text-decoration: none;
+    }
+    header div a:last-of-type{
+        margin: 0 11% 0 2%; padding-left: 43px; background: url('../images/bul_login.svg') left no-repeat; line-height: 30px;
+    }
+    header div input[type='button']{
+        margin-left: 0.5%; text-indent: -9999px; background: url('../images/bul_shoppingcart.svg') center no-repeat;
+        width: 20px; height: 24px;
+    }
+    header h1{
+        max-width: 115px; margin: 0 auto; padding-top: 45px;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header nav{
+        text-align: center; padding-top: 25px;
+    }
+    header nav ul li{
+       display: inline-block;
+    }
+    header nav ul li:not(:last-child){
+        margin-right: 2%;
+    }
+    header nav ul li a{
+        font-size: 18px; color: #000000; 
+    }
+    header nav ul li a:hover{
+        opacity: 0.7; 
+    }
+    .btnTop{
+        position: fixed; z-index: 50; right: calc(8% - 40px); width: 40px; filter: drop-shadow(0 9px 5px rgba(0,0,0,0.15)); 
+        bottom: 85px;
+    }
+    .btnTop img{
+        width: 100%; display: block; transition: transform 0.3s ease-in-out;
+    }
+    .btnTop img:hover{
+        transform: translateY(-15%);
+    }
+    footer{
+        background-color: #021526; padding: 50px 10%; position: relative; bottom: 0; box-sizing: border-box;
+    }
+    footer > div:first-child::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child > *{
+       float: left; 
+    }
+    footer > div:first-child > div:nth-child(2){
+        width: 40%;
+    }
+    footer > div:first-child > *:not(:nth-child(2)){
+        width: 30%;
+    }
+    footer > div:first-child > div:first-child a,
+    footer > div:first-child > div:nth-child(2) p > span,
+    footer > div:first-child > div:last-child span{
+        font-size: 14px; color: #ffffff;
+    }
+    footer > div:first-child > div:first-child a{
+        text-align: left; display: block; 
+    }
+    footer > div:first-child > div:first-child a:not(:first-child){
+        margin-top: 50px;
+    }
+    footer > div:first-child > div:nth-child(2) p,
+    footer > div:first-child > div:nth-child(2) ul,
+    footer > div:first-child > div:last-child{
+        text-align: center;
+    }
+    footer > div:first-child > div:nth-child(2) p span{
+        display: block; line-height: 20px;
+    }
+    footer > div:first-child > div:nth-child(2) p span > a{
+        color: inherit;
+    }
+    footer > div:first-child > div:nth-child(2) p span:last-child,
+    footer > div:first-child > div:nth-child(2) ul{
+        margin-top: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li{
+        display: inline-block;
+    }
+    footer > div:first-child > div:nth-child(2) ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat; background-position: center; width: 25px; height: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(1) a{
+        background-image: url('../images/ico_facebook.svg'); 
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(2) a{
+        background-image: url('../images/ico_twitter.svg');
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(3) a{
+        background-image: url('../images/ico_instagram.svg'); 
+    }
+    footer > div:first-child > div:last-child{
+        position: relative;
+    }
+    footer > div:first-child > div:last-child span{
+        margin-bottom: 50px; display: block; 
+    }
+    footer > div:first-child > div:last-child form input[type='email']{
+        border: none; background-color: transparent; border-bottom: 1px solid #ffffff; color: #ffffff; width: 80%;
+    }
+    footer > div:first-child > div:last-child form input[type='email']::placeholder{
+        font-size: 11px; line-height: 20px; color: #ffffff;
+    }
+    footer > div:first-child > div:last-child form input[type='email']:focus{
+        outline: none;
+    }
+    footer > div:first-child > div:last-child form input[type='submit']{
+        color: #000; position: absolute; bottom: 0; right: -4px; border: none; border-radius: 0; background-color: #ffffff; line-height: 28px;
+    }
+    footer > div:last-child{
+        padding-top: 50px;
+    }
+    footer > div:last-child ul{
+        text-align: center; display: flex; justify-content: center;
+    }
+    footer > div:last-child ul li:first-child{
+        margin-right: 25px;
+    }
+    footer > div:last-child ul li span{
+        font-size: 14px; color: #ffffff; line-height: 35px; 
+    }
+    footer > div:last-child ul li:not(:first-child){
+        width: 50px; 
+    }
+    footer > div:last-child ul li:not(:first-child,:nth-child(2)){
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (min-width:1280px){
+
+    #cartpanel{
+        box-sizing: border-box; position: fixed; top: 0; right: -400px; overflow-x: hidden;
+        width: 19%; height: 100%; z-index: 60; background-color: #ffffff; box-shadow: -9px 11px 20px #221815;
+        display: block; transition: right 1s ease-in-out;
+    }
+    #cartpanel.active{
+        right: 0;
+    }
+    #cartpanel > div{
+        width: 80%; padding: 38px 10%; position: relative; background-color: #03346E; box-sizing: border-box;
+    }
+    #cartpanel > div input[class='closeBtn']{
+        text-indent: -9999px; background: url('../images/bul_arrow_right_cart.svg') center no-repeat; width: 19px;
+        position: absolute; left: 10%; bottom: 38px; border: none; cursor: pointer;
+    }
+    #cartpanel > div h2{
+        text-align: center; color: #ffffff;
+    }
+    #cartpanel form > ul{
+        padding: 30px 5%; border-bottom: 2px solid #dcdcdc; box-sizing: border-box;
+    }
+    #cartpanel form > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartpanel form > ul li a{
+        text-align: center; width: 45%; display: block; border: 1px solid #bcbcbc; box-sizing: border-box;
+        margin-right: 5%; float: left;
+    }
+    #cartpanel form > ul li a img{
+        width: 100%; max-width: 140px;
+    }
+    #cartpanel form > ul li > div:first-of-type{
+        float: left; width: 50%; position: relative;
+    }
+    #cartpanel form > ul li > div:first-of-type dl{
+        font-size: 14px; width: 55%;
+    }
+    #cartpanel form > ul li > div:first-of-type dl,
+    #cartpanel form > ul li > div:first-of-type dl dt{
+        margin-bottom: 10px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent{
+        border: 2px solid #000000; width: 75px; padding: 0 5px; box-sizing: border-box; text-align: center; line-height: 23px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[type='button']{
+        line-height: 25px; 
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="-"]{
+        padding-right: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent input[value="+"]{
+        padding-left: 8px;
+    }
+    #cartpanel form > ul li > div:first-of-type div.numberComponent span{
+        font-size: 12px;
+    }
+    #cartpanel form > ul li > div:first-of-type input[value='Remove']{
+        position: absolute; right: -10px; top: 0; text-decoration: underline; cursor: pointer;
+    }
+    #cartpanel form > div:first-of-type{
+        position: absolute; bottom: 0; box-sizing: border-box; padding-bottom:30px; width: 100%; 
+    }
+    #cartpanel form > div:first-of-type strong{
+        padding-bottom: 35px; border-bottom: 1px solid #dcdcdc; margin-bottom: 30px; display: block; 
+    }
+    #cartpanel form > div:first-of-type strong > span{
+        display: block; padding-left: 10%; font-size: 22px;
+    }
+    #cartpanel form > div:first-of-type strong > span:first-child{
+        margin-bottom: 15px;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']{
+        width: 80%; margin: 0 10%; border: none; background-color: #30bdff; line-height: 35px;
+        font-size: 12px; color: #ffffff;
+    }
+    #cartpanel form > div:first-of-type input[type='submit']:hover{
+        opacity: 0.7;
+    }
+    #loginContainer{
+        width: 100%; position: fixed; padding: 50px 0; display: none; background-color: #fff; height: 100%; z-index: 60; 
+        overflow-y: hidden;
+    }
+    #loginContainer.active{
+        display: block;
+    }
+    #loginContainer > ul{
+        position: absolute; width: 100%; bottom: -900px; transition: bottom 0.7s ease-in-out;  z-index: 10;
+        /* animation: move 20s linear infinite; left: 0; */
+    }
+    #loginContainer > ul{
+        left: 2%; 
+    }
+    #loginContainer:hover > ul{
+        bottom: 200px;
+    }
+    #loginContainer > ul li{
+        display: inline-block; position: relative; width: 13.5%;
+    }
+    #loginContainer > ul li img{
+        width: 100%; display: block; transform: translateY(0); opacity: 0.2; transition: all 0.4s ease-in-out;
+    }
+    #loginContainer > ul li:hover img{
+        opacity: 1; transform: translateY(-20px);
+    }
+    /* @keyframes move{
+        0% { left: -1930px; }
+        100% { left: 1930px; }
+    } */
+    #loginContainer > input[value='close']{
+        appearance: none; border: none; background-color: transparent; text-indent: -9999px; background: url('../images/ico_close.svg') no-repeat; width: 22px; position: absolute; right: 5%;
+        cursor: pointer; transform: rotate(0deg); transition: transform 0.4s ease-in-out;
+    }
+    #loginContainer > input[value='close']:hover{
+        transform: rotate(180deg);
+    }
+    #loginContainer > [id$="Container"]{
+        position: absolute; text-align: center; left: 40%; top: 320px; z-index: 20;
+    }
+    #loginContainer > [id$="Container"] h2{
+        font-size: 48px; margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] p{
+        color: #2f2e2e; font-size: 18px; line-height: 24px; max-width: 370px; margin: 0 auto 30px;
+    }
+    #loginContainer > [id$="Container"] p > mark{
+        font-weight: inherit; font-size: inherit; margin-left: 5px; color: #30bdff; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"],
+    #loginContainer > [id$="Container"] > div{
+        display: none;
+    }
+    #loginContainer > [id$="Container"].active,
+    #loginContainer > [id$="Container"] > div.active{
+        display: block;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type > *{
+        display: block; width: 320px; margin: 0 auto;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type > *:not(:last-child),
+    #loginContainer > [id$="Container"] div form fieldset,
+    #loginContainer > [id$="Container"] div form span{      
+        margin-bottom: 20px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type{
+        line-height: 45px; border: 1px solid #a9a9a9; cursor: pointer; font-size: 14px; color: #2f2e2e; font-weight: 500; opacity: 0.7; transition: opacity 0.4s ease-in-out;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:hover,
+    #loginContainer > [id$="Container"] div:first-of-type span:last-of-type:hover{
+        opacity: 1;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a{
+        background-repeat: no-repeat; background-position: 15px; background-size: 24px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:first-of-type{
+        background-image: url("../images/ico_google.svg");
+    }
+    #loginContainer > [id$="Container"] div:first-of-type a:last-of-type{
+        background-image: url("../images/ico_facebooklogof.svg"); background-color: #1878f2; color: #fff;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type,
+    #loginContainer > [id$="Container"] div form span{
+        font-size: 14px; line-height: 19px; position: relative;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before,
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 140px; margin-bottom: 2px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div:first-of-type span:first-of-type:after{
+        margin-left: 10px; 
+    }
+    #loginContainer > [id$="Container"] div form fieldset *,
+    #loginContainer > [id$="Container"] div form fieldset > *,
+    #loginContainer #fContainer input{
+        display: block; margin: 0 auto; width: 320px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset label{
+        text-align: left; font-size: 16px;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type){
+        line-height: 40px; border: none; border-bottom: 1px solid black; font-size: 14px; margin-bottom: 20px; background-color: transparent;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input:not(:last-of-type):focus{
+        outline: none; border-color: #1878f2;
+    }
+    #loginContainer > [id$="Container"] div form fieldset mark{
+        text-align: left; text-decoration: underline; font-weight: 300; font-size: 14px; margin-bottom: 15px; cursor: pointer;
+    }
+    #loginContainer > [id$="Container"] div form fieldset input[type='submit']{
+        color: #fff; line-height: 45px; appearance: none; border: none; background-color: #30bdff; text-align: center; font-size: 16px;
+        cursor: pointer; 
+    }
+    #loginContainer > [id$="Container"] div form span{
+        display: block;
+    }
+    #loginContainer > [id$="Container"] div form span::before,
+    #loginContainer > [id$="Container"] div form span::after{
+        content: ''; display: inline-block; border-bottom: 1px solid rgb(0, 0, 0,0.5); width: 100px; margin-bottom: 3px;
+    }
+    #loginContainer > [id$="Container"] div form span::before{
+        margin-right: 10px;
+    }
+    #loginContainer > [id$="Container"] div form span::after{
+        margin-left: 10px;
+    }
+    #loginContainer > [id$="Container"] div form a{
+        text-indent: -9999px; display: inline-block; background-repeat: no-repeat; background-position: center;  width: 25px; height: 25px;
+    }
+    #loginContainer > [id$="Container"] div form a:first-of-type{
+        background-image: url('../images/ico_google.svg'); margin-right: 10px; 
+    }
+    #loginContainer > [id$="Container"] div form a:last-of-type{
+        background-image: url('../images/ico_facebooklogo.svg'); margin-left: 10px; 
+    }
+    #loginContainer #fContainer p{
+        font-size: 16px; margin-bottom: 60px;
+    }
+    #loginContainer #fContainer div input[type='submit']{
+        margin-top: 20px;
+    }
+    header{
+        padding-bottom: 50px;
+    }
+    header div{
+        background-color: #021526; display: flex; justify-content: end; align-items: center; padding: 17px 0;
+    }
+    header div a{
+        font-size: 16px; color: #ffffff; text-decoration: none;
+    }
+    header div a:last-of-type{
+        margin: 0 11% 0 1%; padding-left: 43px; background: url('../images/bul_login.svg') left no-repeat; line-height: 30px;
+    }
+    header div input[type='button']{
+        margin-left: 0.5%; text-indent: -9999px; background: url('../images/bul_shoppingcart.svg') center no-repeat;
+        width: 20px; height: 24px;
+    }
+    header h1{
+        max-width: 115px; margin: 0 auto; padding-top: 45px;
+    }
+    header h1 a{
+        display: block;
+    }
+    header h1 a img{
+        width: 100%;
+    }
+    header nav{
+        text-align: center; padding-top: 25px;
+    }
+    header nav ul li{
+       display: inline-block;
+    }
+    header nav ul li:not(:last-child){
+        margin-right: 2%;
+    }
+    header nav ul li a{
+        font-size: 20px; color: #000000; 
+    }
+    header nav ul li a:hover{
+        opacity: 0.7; 
+    }
+    .btnTop{
+        position: fixed; z-index: 50; right: calc(6.27% - 40px); width: 40px; filter: drop-shadow(0 9px 5px rgba(0,0,0,0.15)); 
+        bottom: 85px;
+    }
+    .btnTop img{
+        width: 100%; display: block; transition: transform 0.3s ease-in-out;
+    }
+    .btnTop img:hover{
+        transform: translateY(-15%);
+    }
+    footer{
+        background-color: #021526; padding: 50px 20%; position: relative; bottom: 0;
+    }
+    footer > div:first-child::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child > *{
+        width: 33%; float: left; 
+    }
+    footer > div:first-child > div:first-child a,
+    footer > div:first-child > div:nth-child(2) p,
+    footer > div:first-child > div:last-child span{
+        font-size: 14px; color: #ffffff; line-height: 20px;
+    }
+    footer > div:first-child > div:first-child a{
+        text-align: left; display: block; 
+    }
+    footer > div:first-child > div:first-child a:not(:first-child){
+        margin-top: 50px;
+    }
+    footer > div:first-child > div:nth-child(2) p,
+    footer > div:first-child > div:nth-child(2) ul,
+    footer > div:first-child > div:last-child{
+        text-align: center;
+    }
+    footer > div:first-child > div:nth-child(2) p span{
+        display: block;
+    }
+    footer > div:first-child > div:nth-child(2) p span > a{
+        color: inherit; font-size: inherit;
+    }
+    footer > div:first-child > div:nth-child(2) p span:last-child,
+    footer > div:first-child > div:nth-child(2) ul{
+        margin-top: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li{
+        display: inline-block;
+    }
+    footer > div:first-child > div:nth-child(2) ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat; background-position: center; width: 25px; height: 25px;
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(1) a{
+        background-image: url('../images/ico_facebook.svg'); 
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(2) a{
+        background-image: url('../images/ico_twitter.svg');
+    }
+    footer > div:first-child > div:nth-child(2) ul li:nth-child(3) a{
+        background-image: url('../images/ico_instagram.svg'); 
+    }
+    footer > div:first-child > div:last-child{
+        position: relative;
+    }
+    footer > div:first-child > div:last-child span{
+        margin-bottom: 50px; display: block;
+    }
+    footer > div:first-child > div:last-child form input[type='email']{
+        border: none; background-color: transparent; border-bottom: 1px solid #ffffff; color: #ffffff; width: 80%;
+    }
+    footer > div:first-child > div:last-child form input[type='email']::placeholder{
+        font-size: 12px; line-height: 20px; color: #ffffff;
+    }
+    footer > div:first-child > div:last-child form input[type='email']:focus{
+        outline: none;
+    }
+    footer > div:first-child > div:last-child form input[type='submit']{
+        position: absolute; bottom: 0; right: -4px; border: none; background-color: #ffffff; line-height: 28px;
+    }
+    footer > div:last-child{
+        padding-top: 50px;
+    }
+    footer > div:last-child ul{
+        text-align: center; display: flex; justify-content: center;
+    }
+    footer > div:last-child ul li:first-child{
+        margin-right: 25px;
+    }
+    footer > div:last-child ul li span{
+        font-size: 12px; color: #ffffff; line-height: 35px; 
+    }
+    footer > div:last-child ul li:not(:first-child){
+        width: 50px; 
+    }
+    footer > div:last-child ul li:not(:first-child,:nth-child(2)){
+        margin-left: 10px;
+    }
+    
+}

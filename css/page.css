@@ -42,9 +42,6 @@
     .indexContainer > div:nth-child(2) > ol li:not(:first-child){
         margin-top: 10px;
     }
-    .indexContainer > .productShow ol li:not(:last-child){
-        margin-right: 10px;
-    }
     .indexContainer > .productShow ol li img{
         width: 100%; display: block;
     }
@@ -79,7 +76,7 @@
         margin-top: 5px;
     }
     .indexContainer > div:nth-child(3) > ol li video{
-        width:100%; display: block; text-align: center; box-sizing: content-box; 
+        width:100%; display: block; text-align: center; box-sizing: content-box; padding: 0 3.6%; box-sizing: border-box;
     }
     .indexContainer > div:nth-child(3) > ol li strong{
         color: #e7938a; font-size: 14px; padding-top: 30px; display: block;

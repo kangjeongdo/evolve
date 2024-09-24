@@ -55,7 +55,7 @@
         background: url('../images/ico_arrowL.svg') no-repeat; z-index: 10;
     }
     .indexContainer > .productShow > h3{
-        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto;
+        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto; line-height: 19px;
     }
     .indexContainer > .productShow > h3 > b{
         font-size: 22px; color: #8e4d94; margin-bottom: 30px; display: block;
@@ -82,13 +82,13 @@
         color: #e7938a; font-size: 14px; padding-top: 30px; display: block;
     }
     .indexContainer > div:nth-child(3) > ol li P{
-        padding-top: 25px; max-width: 330px; margin: 0 auto;
+        padding-top: 25px; max-width: 330px; margin: 0 auto; font-size: 14px; line-height: 20px;
     }
     .indexContainer > div:last-child::before{
         content: url('../images/pic_line.svg'); display: block; width: 80%; background-repeat: no-repeat; margin: 0 auto;
     }
     .indexContainer > div:last-child p{
-        padding-top: 50px; text-align: center; font-size: 14px;
+        padding-top: 50px; text-align: center; font-size: 14px; line-height: 20px;
     }
     .indexContainer > div:last-child ul{
         text-align: center; padding-top: 50px;

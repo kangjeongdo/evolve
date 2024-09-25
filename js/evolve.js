@@ -126,9 +126,9 @@ function toggle(){
         currentToggle = "#" + $(this).attr("data-toggle");
         $(currentToggle).toggleClass("active");
         if($("#spec").hasClass("active")){
-            $(this).css({"background-image":"url('../images/bul_remove.svg')"});
+            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
         }else{
-            $(this).css({"background-image":"url('../images/bul_add.svg')"});
+            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_add.svg')"});
         }
     });
     $('.opentogi').click(function(){
@@ -136,9 +136,9 @@ function toggle(){
         currentToggle = "#" + $(this).attr("data-toggle");
         $(currentToggle).toggleClass("active");
         if($("#cate").hasClass("active") || $("#rangeInput").hasClass("active") || $("#size").hasClass("active")){
-            $(this).css({"background-image":"url('../images/bul_remove.svg')"});
+            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
         }else{
-            $(this).css({"background-image":"url('../images/bul_add.svg')"});
+            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_add.svg')"});
         }
     });
     $('.deleteBtn').click(function(){
@@ -209,13 +209,13 @@ function cardBg(){
 
         switch(cardNum){
             case "4" :
-                card.css("background-image","url('../images/pic_visacard.svg')");
+                card.css("background-image","url('https://kangjeongdo.github.io/evolve/images/pic_visacard.svg')");
                 break;
             case "5" :
-                card.css("background-image","url('../images/pic_master.svg')");
+                card.css("background-image","url('https://kangjeongdo.github.io/evolve/images/pic_master.svg')");
                 break;
             default:
-                card.css("background-image","url('../images/pic_american.svg')");
+                card.css("background-image","url('https://kangjeongdo.github.io/evolve/images/pic_american.svg')");
                 break;
         }
     });

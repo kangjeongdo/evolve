@@ -881,7 +881,7 @@ header div input[type='button']{
         right: 0;
     }
     #cartpanel > div{
-        width: 80%; padding: 38px 10%; position: relative; background-color: #03346E; box-sizing: border-box;
+        width: 100%; padding: 38px 10%; position: relative; background-color: #03346E; box-sizing: border-box;
     }
     #cartpanel > div input[class='closeBtn']{
         text-indent: -9999px; background: url('../images/bul_arrow_right_cart.svg') center no-repeat; width: 19px;
@@ -901,7 +901,7 @@ header div input[type='button']{
         margin-right: 5%; float: left;
     }
     #cartpanel form > ul li a img{
-        width: 100%; max-width: 140px;
+        width: 95%; max-width: 140px;
     }
     #cartpanel form > ul li > div:first-of-type{
         float: left; width: 50%; position: relative;

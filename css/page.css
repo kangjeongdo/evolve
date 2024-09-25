@@ -237,7 +237,7 @@
         display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px; position: relative;
     }
     #rangeInput > div:last-child > [data-sign] span{
-        font-size: 14px; transition: 0.5s; position: absolute; top: -29px;
+        font-size: 14px; transition: 0.5s; position: absolute; top: -25px;
     }
     #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
     #rangeInput > div:last-child > [data-sign] #valueR{right: 0;}
@@ -1207,11 +1207,13 @@
         width: 100%; height: 4px; background-color: #e8e8e8; border: none; border-radius: 3px;
     }
     .listContainer aside form fieldset #rangeInput > div:last-child{
-        display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px;
+        display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px; position: relative;
     }
     #rangeInput > div:last-child > [data-sign] span{
-        font-size: 14px; transition: 0.5s;
+        font-size: 14px; transition: 0.5s; position: absolute; top: -27px;
     }
+    #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
+    #rangeInput > div:last-child > [data-sign] #valueR{right: 0}
     .listContainer .productList{
         width: 84%; padding-top: 65px;
     }

@@ -211,7 +211,7 @@
         margin-top: 0; display: none; transition: margin-top 0.4s ease-in-out;
     }
     #rangeInput.active{
-        margin-top: 25px; display: block;
+        margin-top: 30px; display: block;
     }
     #rangeInput .rangeSlider{
         position: relative; width: 100%; display: flex;
@@ -234,11 +234,13 @@
         width: 100%; height: 4px; background-color: #e8e8e8; border: none; border-radius: 3px;
     }
     .listContainer aside form fieldset #rangeInput > div:last-child{
-        display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px;
+        display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px; position: relative;
     }
     #rangeInput > div:last-child > [data-sign] span{
-        font-size: 14px; transition: 0.5s;
+        font-size: 14px; transition: 0.5s; position: absolute; top: -35px;
     }
+    #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
+    #rangeInput > div:last-child > [data-sign] #valueR{right: 0;}
     .listContainer .productList{
         width: 100%; padding-top: 40px;
     }
@@ -573,7 +575,7 @@
         padding: 0 4%; width: 100%; color: #757575; line-height: 45px; 
     }
     .customerCart > div:first-child > div > #cupon input[type='submit']{
-        position: absolute; right: 0; top: 40px; width: 29%; text-align: center; line-height: 43px; border: none; border-left: 2px solid black; color: #000;
+        position: absolute; right: 0; top: 40px; width: 29%; text-align: center; line-height: 44px; border: none; border-left: 2px solid black; color: #000; cursor: pointer;
     }
     .customerCart > div:first-child > div > #text{
         opacity: 0; height: 0; transition: all 0.5s ease-in-out;
@@ -784,6 +786,12 @@
     }
     .deliveryInfo #pContainer #page2 fieldset div input{
         display: inline-block; background-color: transparent; border: none; width: 12%; color: #9b9b9b; font-size: 14px;
+    }
+    .deliveryInfo #pContainer #page2 fieldset div:nth-child(2) input{
+        min-width: 25px;
+    }
+    .deliveryInfo #pContainer #page2 fieldset div:last-child input{
+        min-width: 32px;
     }
     .deliveryInfo #pContainer #page2 fieldset div:first-child input{
         width: 15%;

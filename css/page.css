@@ -1560,7 +1560,7 @@
         padding: 0 4%; width: 100%; color: #757575; line-height: 45px;
     }
     .customerCart > div:first-child > div > #cupon input[type='submit']{
-        position: absolute; right: 0; top: 39.5px; width: 29%; text-align: center; line-height: 43px; border: none; border-left: 2px solid black; color: black; 
+        position: absolute; right: 0; top: 39.5px; width: 29%; text-align: center; line-height: 45px; border: none; border-left: 2px solid black; color: black; 
     }
     .customerCart > div:first-child > div > #text{
         opacity: 0; height: 0; transition: all 0.5s ease-in-out;

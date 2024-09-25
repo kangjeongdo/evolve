@@ -237,7 +237,7 @@
         display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px; position: relative;
     }
     #rangeInput > div:last-child > [data-sign] span{
-        font-size: 14px; transition: 0.5s; position: absolute; top: -35px;
+        font-size: 14px; transition: 0.5s; position: absolute; top: -29px;
     }
     #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
     #rangeInput > div:last-child > [data-sign] #valueR{right: 0;}
@@ -575,7 +575,7 @@
         padding: 0 4%; width: 100%; color: #757575; line-height: 45px; 
     }
     .customerCart > div:first-child > div > #cupon input[type='submit']{
-        position: absolute; right: 0; top: 40px; width: 29%; text-align: center; line-height: 44px; border: none; border-left: 2px solid black; color: #000; cursor: pointer;
+        position: absolute; right: 0; top: 40px; width: 29%; text-align: center; line-height: 45px; border: none; border-left: 2px solid black; color: #000; cursor: pointer;
     }
     .customerCart > div:first-child > div > #text{
         opacity: 0; height: 0; transition: all 0.5s ease-in-out;

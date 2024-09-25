@@ -1031,7 +1031,7 @@
         background: url('../images/ico_arrowL.svg') no-repeat; z-index: 10;
     }
     .indexContainer > .productShow > h3{
-        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto;
+        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto; line-height: 19px;
     }
     .indexContainer > .productShow > h3 > b{
         font-size: 22px; color: #8e4d94; margin-bottom: 30px; display: block;
@@ -1070,7 +1070,7 @@
         color: #e7938a; font-size: 14px; padding-top: 30px; display: block;
     }
     .indexContainer > div:nth-child(3) > ol li P{
-        padding-top: 25px; max-width: 330px; margin: 0 auto;
+        padding-top: 25px; max-width: 330px; margin: 0 auto; font-size: 16px; line-height: 22px;
     }
     .indexContainer > div:last-child::before{
         content: url('../images/pic_line.svg'); display: block; width: 52%; background-repeat: no-repeat; margin: 0 auto;
@@ -1213,7 +1213,7 @@
         display: flex; flex-direction: row; justify-content: space-between; margin-top: 15px; position: relative;
     }
     #rangeInput > div:last-child > [data-sign] span{
-        font-size: 14px; transition: 0.5s; position: absolute; top: -23px;
+        font-size: 14px; transition: 0.5s; position: absolute; top: -21px;
     }
     #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
     #rangeInput > div:last-child > [data-sign] #valueR{right: 0}
@@ -1996,10 +1996,10 @@
         background: url('../images/ico_arrowL.svg') no-repeat; z-index: 10;
     }
     .indexContainer > .productShow > h3{
-        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto;
+        text-align: center; font-size: 13px; color: #000; max-width: 260px; margin: 0 auto; line-height: 19px;
     }
     .indexContainer > .productShow > h3 > b{
-        font-size: 22px; color: #8e4d94; margin-bottom: 30px; display: block;
+        font-size: 22px; color: #8e4d94; margin-bottom: 30px; display: block; 
     }
     .indexContainer > div:nth-child(3) > ol{
         display: flex; justify-content: center; align-items: start; margin-bottom: 50px; flex-direction: row;
@@ -2035,7 +2035,7 @@
         color: #e7938a; font-size: 14px; padding-top: 30px; display: block;
     }
     .indexContainer > div:nth-child(3) > ol li P{
-        padding-top: 25px; max-width: 330px; margin: 0 auto;
+        padding-top: 25px; max-width: 330px; margin: 0 auto; font-size: 16px; line-height: 22px;
     }
     .indexContainer > div:last-child::before{
         content: url('../images/pic_line.svg'); display: block; width: 52%; background-repeat: no-repeat; margin: 0 auto;

@@ -105,11 +105,14 @@
     .listContainer{
         padding: 0 3.6%; box-sizing: border-box; 
     }
+    .listContainer > div:first-of-type{
+        position: relative;
+    }
     .listContainer > div:first-of-type:not(.allList):before{
-        content: 'Fillter by'; display: inline-block;  width: 88%; font-size: 20px; text-align: left; vertical-align: text-top; font-weight: 500;
+        content: 'Fillter by'; position: absolute; left: 0; width: 88%; font-size: 20px; text-align: left; font-weight: 500;
     }
     .listContainer > div:first-of-type > img{
-        cursor: pointer; box-shadow: 0px 9px 9px rgba(0,0,0,0.2); border-radius: 30px; padding: 2%; box-sizing: border-box; vertical-align: text-bottom; display: inline-block; width: 35px; height: 32px;
+        position: absolute; right: 0; top: -8px; cursor: pointer; box-shadow: 0px 9px 9px rgba(0,0,0,0.2); border-radius: 30px; padding: 6px; box-sizing: border-box; vertical-align: text-bottom; display: inline-block; width: 35px; height: 32px;
     }
     .listContainer aside::before{
         content: ''; display: block; width: 100%; background-color: #03346E; height: 85px; position: absolute; top: 0; left: 0;
@@ -242,7 +245,7 @@
     #rangeInput > div:last-child > [data-sign] #valueL{left: 0;}
     #rangeInput > div:last-child > [data-sign] #valueR{right: 0;}
     .listContainer .productList{
-        width: 100%; padding-top: 40px;
+        width: 100%; padding-top: 60px;
     }
     .listContainer .allList{
         width: 100%;

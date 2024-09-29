@@ -25,7 +25,7 @@
     }
     .indexContainer > div:first-child a{
         background-color: #a24848; font-size: 2.5vw; color: #fff; line-height: 5vw; text-align: center; width: 30%; display: block;
-        position: absolute; bottom: 25px; left: 3%; 
+        position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
     }
     .indexContainer > div:first-child a:hover{
         opacity: 0.7; transition: 0.5s;
@@ -447,12 +447,7 @@
         font-weight: 500;
     }
     #addressPopup{
-        position: fixed; top: 30%; left: 11%; background-color: #000; width: 80%; display: none; z-index: 30; color: #000; transition: 1s ease-in;
-    }
-    @media screen and (max-width:400px) {
-        #addressPopup{
-            width: 90%; left: 5%;
-        }
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background-color: #000; width: 90%; display: none; z-index: 30; color: #000; transition: 1s ease-in;
     }
     #addressPopup:hover{
         background-color: #a9a9a9;
@@ -997,7 +992,7 @@
     }
     .indexContainer > div:first-child a{
         background-color: #a24848; font-size: 14px; color: #fff; line-height: 40px; text-align: center; width: 190px; display: block;
-        position: absolute; bottom: 25px; left: 40%;
+        position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
     }
     .indexContainer > div:first-child a:hover{
         opacity: 0.7; transition: 0.5s;
@@ -1428,7 +1423,7 @@
         font-weight: 500;
     }
     #addressPopup{
-        position: fixed; top: 35%; left: 30%; background-color: #000; width: 40%; display: none; z-index: 30; color: #000; transition: 1s ease-in;
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background-color: #000; width: 40%; display: none; z-index: 30; color: #000; transition: 1s ease-in;
     }
     #addressPopup:hover{
         background-color: #a9a9a9;
@@ -1962,7 +1957,7 @@
     }
     .indexContainer > div:first-child a{
         background-color: #a24848; font-size: 14px; color: #fff; line-height: 40px; text-align: center; width: 190px; display: block;
-        position: absolute; bottom: 25px; left: 46%;
+        position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
     }
     .indexContainer > div:first-child a:hover{
         opacity: 0.7; transition: 0.5s;
@@ -2394,7 +2389,7 @@
         font-weight: 500;
     }
     #addressPopup{
-        position: fixed; top: 40%; left: 40%; background-color: #000; width: 25%; display: none; z-index: 30; transition: background-color 1s ease;
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);background-color: #000; width: 30%; display: none; z-index: 30; transition: background-color 1s ease;
     }
     #addressPopup:hover{
         background-color: #a8a8a8;

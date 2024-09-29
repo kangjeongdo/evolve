@@ -617,7 +617,7 @@ header div input[type='button']{
         transform: rotate(180deg);
     }
     #loginContainer > [id$="Container"]{
-        position: absolute; text-align: center; left: calc(70% - 322px); top: calc(650px - 342px); z-index: 20;
+        position: absolute; text-align: center; z-index: 20; left: 50%; top: 50%; z-index: 20; transform: translate(-50%,-50%);
     }
     #loginContainer > [id$="Container"] h2{
         font-size: 48px; margin-bottom: 20px;
@@ -988,7 +988,7 @@ header div input[type='button']{
         transform: rotate(180deg);
     }
     #loginContainer > [id$="Container"]{
-        position: absolute; text-align: center; left: 40%; top: 320px; z-index: 20;
+        position: absolute; text-align: center; left: 50%; top: 50%; z-index: 20; transform: translate(-50%,-50%);
     }
     #loginContainer > [id$="Container"] h2{
         font-size: 48px; margin-bottom: 20px;

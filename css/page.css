@@ -1100,7 +1100,7 @@
     .listContainer >*{
         float: left;
     }
-    .listContainer > div:first-of-type{
+    .listContainer > div:first-of-type:not(.allList){
         display: none;
     }
     .listContainer aside{
@@ -2068,7 +2068,7 @@
     .listContainer >*{
         float: left;
     }
-    .listContainer > div:first-of-type{
+    .listContainer > div:first-of-type:not(.allList){
         display: none;
     }
     .listContainer aside{

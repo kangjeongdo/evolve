@@ -132,13 +132,23 @@ function toggle(){
         }
     });
     $('.opentogi').click(function(){
-        $(this).toggleClass("active");
+        // $(this).toggleClass("active");
+        // currentToggle = "#" + $(this).attr("data-toggle");
+        // $(currentToggle).toggleClass("active");
+        // if($("#cate").hasClass("active") || $("#rangeInput").hasClass("active") || $("#size").hasClass("active")){
+        //     $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
+        // }else{
+        //     $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_add.svg')"});
+        // }
         currentToggle = "#" + $(this).attr("data-toggle");
-        $(currentToggle).toggleClass("active");
-        if($("#cate").hasClass("active") || $("#rangeInput").hasClass("active") || $("#size").hasClass("active")){
-            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
-        }else{
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(currentToggle ).removeClass("active");
             $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_add.svg')"});
+        } else {
+            $(this).addClass("active");
+            $(currentToggle ).addClass("active");
+            $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
         }
     });
     $('.deleteBtn').click(function(){
@@ -167,16 +177,16 @@ function load(){
 }
 function dataSrc(){
     $('.productList ul li a img').mouseover(function(){
-        $(this).attr('src',$(this).attr('src').replace(".png","_hover.png"));
+        $(this).attr('src',$(this).attr('src').replace(".webp","_hover.webp"));
     });
     $('.productList ul li a img').mouseleave(function(){
-        $(this).attr('src',$(this).attr('src').replace("_hover.png",".png"));
+        $(this).attr('src',$(this).attr('src').replace("_hover.webp",".webp"));
     });
     $('.allList ul li a img').mouseover(function(){
-        $(this).attr('src',$(this).attr('src').replace(".png","_hover.png"));
+        $(this).attr('src',$(this).attr('src').replace(".webp","_hover.webp"));
     });
     $('.allList ul li a img').mouseleave(function(){
-        $(this).attr('src',$(this).attr('src').replace("_hover.png",".png"));
+        $(this).attr('src',$(this).attr('src').replace("_hover.webp",".webp"));
     });
 }
 function dataGe(range){

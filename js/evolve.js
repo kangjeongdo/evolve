@@ -7,7 +7,6 @@ $(document).ready(function(){
     numberComponent();
     load();
     dataSrc();
-    $('#shortVideo').fitVids({customSelector : "iframe[src='videos/evolve_ad.mp4']"});
     dataGe("[id^='range']");
     popUp();
     toggle();

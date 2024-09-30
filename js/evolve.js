@@ -35,7 +35,6 @@ function customSlider(slideName,slideMode,slideEasing,slideVideo,slidePager,slid
         wrapperClass: slideWrapperClass,
         randomStart: sliderRandom,
         touchEnabled: false,
-        // infiniteLoop: false
     });
 }
 function popUp(){
@@ -132,14 +131,6 @@ function toggle(){
         }
     });
     $('.opentogi').click(function(){
-        // $(this).toggleClass("active");
-        // currentToggle = "#" + $(this).attr("data-toggle");
-        // $(currentToggle).toggleClass("active");
-        // if($("#cate").hasClass("active") || $("#rangeInput").hasClass("active") || $("#size").hasClass("active")){
-        //     $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_remove.svg')"});
-        // }else{
-        //     $(this).css({"background-image":"url('https://kangjeongdo.github.io/evolve/images/bul_add.svg')"});
-        // }
         currentToggle = "#" + $(this).attr("data-toggle");
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");

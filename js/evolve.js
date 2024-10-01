@@ -12,7 +12,7 @@ $(document).ready(function(){
     toggle();
     cardBg();
     checkout(".deliveryInfo [id$='Container']");
-    log()
+    log();
 });
 function customSlider(slideName,slideMode,slideEasing,slideVideo,slidePager,slidePagerType,slideControls,slideAuto,slideAutoControls,slideAutoStart,slideAutoHover,slideMaxSlides,slideMinSlides,slideSlideWidth,slideShrinkItems,slideSlideMargin,slideWrapperClass,sliderRandom){
     $(slideName).bxSlider({

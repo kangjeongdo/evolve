@@ -1112,7 +1112,23 @@ header div input[type='button']{
         width: 20px; height: 24px;
     }
     header h1{
-        max-width: 115px; margin: 0 auto; padding-top: 45px;
+        max-width: 115px; margin: 0 auto; padding-top: 45px; animation: 1.5s linear 0s 1 forwards logo;
+    }
+    @keyframes logo {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0,-100%,0);
+            transform: translate3d(0,-100%,0)
+        }
+        40%{
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0)
+        }
     }
     header h1 a{
         display: block;

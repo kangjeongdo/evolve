@@ -44,6 +44,8 @@ function popUp(){
         $(currentPopup).addClass("active");
     });
     $('.closePop').click(function(){
+        var address = $("#addressPopup div #city option:selected").val();
+        $('.openPop').text(address);
         $(currentPopup).removeClass("active");
     });
     $(del).click(function(){
@@ -80,7 +82,8 @@ function btnTop(){
 function numberComponent(){
     var Y = 229;
     var plusprice = 0;
-    var minusprice = 0;
+    var minusprice = plusprice
+    console.log(minusprice)
     $('.numberComponent > input.countDown').click(function(){
         var count = $(this).parent('.numberComponent').children('span').text();
         var num = Number(count);
@@ -90,6 +93,8 @@ function numberComponent(){
             num=1;
         }
         $(this).parent('.numberComponent').children('span').text(num);
+        $('#subTotal').text("$" + Y + ".00");
+        $('#total').text("$" + (Y + 100) + ".00");
         $('#price').text("$" + Y + ".00");
     });
 
@@ -103,7 +108,10 @@ function numberComponent(){
         }
         $(this).parent('.numberComponent').children('span').text(num);
         plusprice = (Y*num);
+        $('#subTotal').text("$" + plusprice + ".00");
+        $('#total').text("$" + (plusprice + 100) + ".00");
         $('#price').text("$" + plusprice + ".00");
+        return plusprice
     });
 }
 function toggleUi(btn){

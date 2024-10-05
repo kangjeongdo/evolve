@@ -82,20 +82,29 @@ function btnTop(){
 function numberComponent(){
     var Y = 229;
     var plusprice = 0;
-    var minusprice = plusprice
-    console.log(minusprice)
+    var result = 0
     $('.numberComponent > input.countDown').click(function(){
         var count = $(this).parent('.numberComponent').children('span').text();
+        var val = $(".customerCart > div:first-child ul .cartItem > #price").text();
         var num = Number(count);
-        
+        var minPrice = val.slice(1,5);
+        if(minPrice.includes('.')){
+            minPrice = val.slice(1,4);
+        }else{
+            minPrice = val.slice(1,5);
+        }
         num--;
         if(num<=0){
             num=1;
         }
+        result = (minPrice-Y)
+        if(result <= 229){
+            result = 229
+        }
         $(this).parent('.numberComponent').children('span').text(num);
-        $('#subTotal').text("$" + Y + ".00");
-        $('#total').text("$" + (Y + 100) + ".00");
-        $('#price').text("$" + Y + ".00");
+        $('#subTotal').text("$" + result + ".00");
+        $('#total').text("$" + (result + 100) + ".00");
+        $('#price').text("$" + result + ".00");
     });
 
     $('.numberComponent > input.countUp').click(function(){

@@ -2089,7 +2089,7 @@
     }
     .listContainer aside input[value='Catergories'],
     .listContainer aside form fieldset legend{
-        font-size: 16px; background-repeat: no-repeat; box-sizing: border-box; background-image: url('../images/bul_add.svg'); transition: background-image 0.5s ease;
+        font-size: 16px; background-repeat: no-repeat; box-sizing: border-box; background-image: url('../images/bul_add.svg'); transition: background-image 0.5s ease; cursor: pointer;
     }
     .listContainer aside form fieldset legend{
         background-position: right center; 
@@ -2104,7 +2104,7 @@
         display: block;
     }
     .listContainer aside ol li{
-        margin-top: 0; transition: margin-top 0.5s ease-in;
+        margin-top: 0; transition: margin-top 0.5s ease-in; 
     }
     .listContainer aside ol.active li{
         margin-top: 10px;

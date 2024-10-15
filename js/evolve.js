@@ -51,7 +51,6 @@ $(document).ready(function () {
   cardBg();
   checkout(".deliveryInfo [id$='Container']");
   log();
-  img();
 });
 function customSlider(
   slideName,
@@ -93,26 +92,6 @@ function customSlider(
     randomStart: sliderRandom,
     touchEnabled: false,
   });
-}
-function img() {
-  var img = $(".indexContainer > [class^='images']"),
-    imglength = img.length,
-    currentIndex = 0;
-  console.log(img);
-  var timer = setInterval(nextClass, 3500);
-  function nextClass() {
-    var nextImg = (currentIndex + 1) % imglength;
-    img.eq(currentIndex).removeClass("on");
-    img.eq(nextImg).addClass("on");
-    currentIndex = nextImg;
-    console.log(currentIndex);
-  }
-  // img.mouseover(function(){
-  //     clearInterval(timer);
-  // })
-  // img.mouseout(function(){
-  //     setInterval(nextClass,3500);
-  // })
 }
 function popUp() {
   var currentPopup = null;
